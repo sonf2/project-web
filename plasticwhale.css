@@ -55,12 +55,24 @@ a:hover{
 
 body {
     font-family: sans-serif;
+    max-width: 100%;
+    margin:0px;
+    
 }
 
+nav {
+    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 0px;
+}
 nav ul{
   display: flex;
     padding-left: 0px;
        
+}
+
+nav img{
+    max-width: 30vw;
+    max-height: 10vw;
 }
 
 nav li{
@@ -71,8 +83,61 @@ nav li{
 
 nav a{
     text-decoration: none;
-    color: black;
+    color: black;  
+}
+
+============================
+.foto img{
+   max-width:100%;
     
 }
 
-     
+article{
+    font-size:1em;
+    margin: 20px;
+}
+
+.concept{
+    text-align:center;
+    
+
+}
+.tussenkopje{
+    font-size: 2em;
+}
+.hoofdconcept{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8em;
+    margin: 2em;
+}
+
+.hoofdconcept img{
+    max-height: 20vw;
+    min-height: 15vw;
+    text-align: center;
+    margin-left: 3em;
+}
+
+button{
+    background-color: deepskyblue;
+    color:white;
+    border-color: deepskyblue;
+    font-size: 2em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    margin-top: 4em;
+    
+}
+
+.een{
+    display: grid;
+    font-size: 1.5em;
+    
+}
+
+.een h1{
+    font-size: 2.5em;
+}
