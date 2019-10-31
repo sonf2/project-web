@@ -1,0 +1,240 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 195em;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: dodgerblue
+}
+
+a {
+    text-decoration: none;
+    color: #1E1E23;
+    opacity: 1;
+    font-size: 100%;
+    font-weight: 400;
+    transition: 200ms;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    height: 35em;
+}
+
+
+.container {
+    Display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+nav {
+    background-color: white;
+    height: 65px;
+    width: 100%;
+    position: absolute;
+}
+
+#menuToggle {
+    display: block;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+    user-select: none;
+    height: 10em;
+}
+
+#menuToggle input {
+    display: ;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+#menuToggle span {
+    display: block;
+    width: 29px;
+    height: 2px;
+    margin-bottom: 5px;
+    position: relative;
+    background: blue;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 5px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-3px, -1px);
+    background: #36383F;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: relative;
+    width: 180px;
+    height: 900px;
+    box-shadow: 0 0 10px #85888C;
+    margin: -50px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background-color: #F5F6FA;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+
+}
+
+#menu li {
+    padding: 10px 0;
+    transition-delay: 2s;
+}
+
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+.inleiding{
+    margin:5em 2.25em 0em;
+    color:white;      
+
+}
+
+.inleiding p{
+    font-size: 0,8em;
+    padding:0.9em;
+}
+
+.locatie{
+    font-size: 0.7em
+}
+h2{
+    font-weight:bolder;
+    font:2em;
+    padding-bottom: 0.8em;
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* To see the outline of the form */
+    padding: 1em;
+  
+  
+    
+}
+
+form div + div {
+    margin-top: 1em;
+   
+}
+
+
+
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    color:white;
+}
+
+Select{
+    width: 120%;
+    padding:0.2em;
+}
+input, textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em 'Poppins', sans-serif;
+
+    /* To give the same size to all text field */
+    width: 100%;
+    
+    box-sizing: border-box;
+
+    /* To harmonize the look & feel of text field border */
+    border: 1px solid #999;
+}
+
+input:focus, textarea:focus {
+    /* To give a little highlight on active elements */
+    border-color: #000;
+}
+
+.bericht{
+    color:white;
+}
+
+textarea {
+    /* To properly align multiline text fields with their labels */
+    display:block;
+    vertical-align: top;
+
+    /* To give enough room to type some text */
+    height: 6em;
+
+    /* To allow users to resize any textarea vertically
+       It does not work on all browsers */
+    resize: vertical;
+}
+
+.button {
+    /* To position the buttons to the same position of the text fields */
+    padding-left: /* same size as the label elements */
+}
+button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+   
+    width: 100%;
+    height: 4em;
+    font-size:0.9em;
+    margin-top: 3em
+}
+    
+
